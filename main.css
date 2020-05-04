@@ -1,0 +1,463 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.seti {
+    position: fixed;
+    right: 2%;
+    top: 20%;
+    z-index: 1;
+}
+
+.seti-item {
+    list-style: none;
+    margin-bottom: 0.4rem;
+}
+
+.seti-item img {
+    background: white;
+    border-radius: 0.5rem;
+}
+
+.main-header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: #ae9a64;
+    width: 100%;
+    z-index: 1;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-items {
+    list-style: none;
+   display: flex;
+}
+
+.header-item {
+    padding: 0.5rem 4rem;
+    font-size: 0.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header-item a {
+    text-decoration: none;
+    color: #323232;
+    transition: color 0.3s ease 0s;
+}
+
+.header-item a:hover {
+    color: white;
+    transition: color 0.3s ease 0s;
+}
+
+.header-main-title a {
+    color: white;
+}
+
+#section-1 {
+    position: relative;
+    text-align: center;
+    top: 63px;
+    padding: 0.5rem 0;
+    background: #323232;
+    color: #ae9a64;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 0.9rem;
+}
+
+#section-2 {
+    background: linear-gradient( to top, rgb(0, 0, 0) 0%, transparent),
+    url("images/top.jpg") left 10% bottom 70% / cover no-repeat border-box;
+    background-attachment: fixed;
+    width: 100%;
+    height: 700px;
+    padding-top: 5rem;
+}
+
+.main-title {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-title h1 {
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+    font-size: 10rem;
+    margin-bottom: 0;
+}
+
+.main-title h3 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    margin-top: 0rem;
+}
+
+.main-title a {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background: rgba(0, 0, 0, 0.4);
+    border: 2px solid white;
+    padding: 0.5rem 1rem;
+    margin-top: 5rem;
+    font-size: 1.2rem;
+    transition: border 0.3s ease 0s;
+}
+
+.main-title a:hover {
+    border-color: #ae9a64;
+    transition: border-color 0.3s ease 0s;
+}
+
+#section-3 {
+    position: relative;
+    background: linear-gradient( to top, rgb(0, 0, 0) 0%, transparent),
+    url("images/main-1.jpg") left 10% bottom 70% / cover no-repeat border-box;
+    backdrop-filter: grayscale(50%);
+    background-attachment: fixed;
+    width: 100%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 5rem;
+}
+
+.restaurant-title {
+    text-align: center;
+    padding-bottom: 5rem;
+    font-size: 3rem;
+    font-weight: 400;
+    color: #ae9a64;
+}
+
+.restaurant-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.restaurant-item {
+    text-align: center;
+    list-style: none;
+}
+
+.restaurant-item h3 {
+    border-bottom: 1px solid #ae9a64;
+    margin: 0 auto;
+    width: 20%;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.restaurant-item h1 {
+    color: #ae9a64;
+    width: 60%;
+    margin: 2rem auto;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.restaurant-item p {
+    color: #ae9a64;
+    width: 60%;
+    margin: 0 auto;
+}
+
+#section-4 {
+    background: linear-gradient( to top, rgb(0, 0, 0) 0%, transparent),
+    url("images/main-2.jpg") left 10% bottom 70% / cover no-repeat border-box;
+    background-attachment: fixed;
+    width: 100%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.restaurant-open {
+    text-align: center;
+}
+
+.restaurant-open h1 {
+    color: #ae9a64;
+    width: 50%;
+    margin: 0 auto;
+    font-size: 4rem;
+    font-weight: 400;
+}
+
+.restaurant-open p {
+    color: #ae9a64;
+    width: 50%;
+    margin: 3rem auto;
+    font-size: 1.1rem;
+}
+
+#section-5 {
+    background:linear-gradient( to top, rgb(0, 0, 0) 0%, transparent),
+     url("images/main-3.jpg") left 10% bottom 70% / cover no-repeat border-box;
+    background-attachment: fixed;
+    width: 100%;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.steak {
+    text-align: center;
+}
+
+.steak h1 {
+    color: #ae9a64;
+    width: 50%;
+    margin: 0 auto;
+    font-size: 4rem;
+    font-weight: 400
+}
+
+.steak p {
+    color: #ae9a64;
+    width: 50%;
+    margin: 3rem auto;
+    font-size: 1.1rem;
+}
+
+#section-6 {
+    position: relative;
+    background:linear-gradient( to top, rgb(0, 0, 0) 0%, transparent),
+     url("images/main-4.jpg") left 10% bottom 70% / cover no-repeat border-box;
+    background-attachment: fixed;
+    width: 100%;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bar {
+    text-align: center;
+}
+
+.bar h1 {
+    color: #ae9a64;
+    width: 25%;
+    margin: 0 auto;
+    font-size: 4rem;
+    font-weight: 400
+}
+
+.bar p {
+    color: #ae9a64;
+    width: 50%;
+    margin: 3rem auto;
+    font-size: 1.1rem;
+}
+
+#section-7 {
+    width: 100%;
+    background: #323232;
+}
+
+#section-7 h1 {
+    text-align: center;
+    color: #ae9a64;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 3rem;
+    font-weight: 500;
+    margin: 0;
+    padding: 3rem 0;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery-items {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.gallery-item {
+  margin: 0 auto;
+}
+
+.gallery-item img {
+    width: 365.9px;
+    height: 265px;
+    filter: brightness(90%);
+    transition: filter 1s ease 0s;
+}
+
+.gallery-item img:hover {
+    filter: brightness(30%);
+    transition: filter 0.5s ease 0s;
+}
+
+#section-8 {
+    background: url("images/main-5.jpg") left 10% bottom 20% / cover no-repeat border-box;
+    background-attachment: fixed;
+    width: 100%;
+    height: 200px;
+}
+
+.input-email {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3rem;
+}
+
+.input-email label {
+    color: #ae9a64;
+}
+
+.input-email input {
+    width: 40%;
+    padding: 0.5rem 1rem;
+}
+
+.input-email button {
+    width: 40%;
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: #ae9a64;
+    border: 1px solid #ae9a64;
+    cursor: pointer;
+}
+
+.input-email input.invalid,
+.input-email select.invalid,
+.input-email :invalid {
+    border-color: red !important;
+}
+
+.input-email button:focus,
+.input-email input:focus {
+    outline: none;
+}
+
+.footer {
+    background: #323232;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer h1 {
+    text-align: center;
+    color: #ae9a64;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 3rem;
+    font-weight: 500;
+    width: 25%;
+    margin: 2rem auto;
+    margin-bottom: 0;
+}
+
+.footer p {
+    text-align: center;
+    color: #ae9a64;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin: 2rem auto;
+}
+
+.footer-input {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.footer-input-items {
+    list-style: none;
+    padding: 0;
+    text-align: right;
+}
+
+.footer-input-item {
+    padding: 0.2rem;
+}
+
+.footer-input-item input {
+    padding: 0.5rem 0.5rem;
+    padding-right: 6rem;
+    background: #323232;
+    border: 3px solid #ae9a64;
+    color: #ae9a64;
+}
+
+.sms-input input {
+    padding-bottom: 6rem;
+}
+
+.footer-input-item button {
+    background: #ae9a64;
+    border: 1px solid #ae9a64;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1rem;
+    padding: 0.3rem;
+    cursor: pointer;
+}
+
+.footer-input-item input:focus,
+.footer-input-item button:focus {
+    outline: none;
+}
+
+.arrow-top__items {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 1rem 0;
+}
+
+.arrow-top__item {
+    padding: 0.5rem 0;
+}
+
+.arrow-top__item a {
+    text-decoration: none;
+    color: #ae9a64;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 0.9rem;
+    transition: color 0.5s ease 0s;
+}
+
+.arrow-top__item a:hover {
+    color: #7e6e42;
+    cursor: pointer;
+    transition: color 0.3s ease 0s;
+}
