@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="shared.css">
     <link rel="stylesheet" href="main.css">
     <title>Steak-House</title>
 </head>
@@ -11,19 +12,19 @@
         <div class="header">
             <ul class="header-items">
                 <li class="header-item header-main-title">
-                    <a href="">ГЛАВНАЯ</a>
+                    <a href="index.html">ГЛАВНАЯ</a>
                 </li>
                 <li class="header-item">
-                    <a href="">О НАС</a>
+                    <a href="#section-3">О НАС</a>
                 </li>
                 <li class="header-item">
-                    <a href="">МЕНЮ</a>
+                    <a href="menu/index.html">МЕНЮ</a>
                 </li>
                 <li class="header-item">
-                    <a href="">ОНЛАЙН-ЗАКАЗ</a>
+                    <a href="online/index.html">ОНЛАЙН-ЗАКАЗ</a>
                 </li>
                 <li class="header-item">
-                    <a href="">КОНТАКТЫ</a>
+                    <a href="#footer">КОНТАКТЫ</a>
                 </li>
             </ul>
         </div>
@@ -49,6 +50,59 @@
                 <a href="">
                     <img src="images/foursquare.png" alt="">
                 </a>
+            </li>
+        </ul>
+    </div>
+    <div class="mobile-footer">
+        <ul class="mobile-footer__items">
+            <li class="mobile-footer__item">
+                <a href="">
+                    <img src="images/instagram.png" alt="">
+                </a>
+            </li>
+            <li class="mobile-footer__item">
+                <a href="">
+                    <img src="images/facebook.png" alt="">
+                </a>
+            </li>
+            <li class="mobile-footer__item">
+                <a href="">
+                    <img src="images/twitter.png" alt="">
+                </a>
+            </li>
+            <li class="mobile-footer__item">
+                <a href="">
+                    <img src="images/foursquare.png" alt="">
+                </a>
+            </li>
+        </ul>
+        <div class="menu__button">
+            <button class="mobile-menu__button">
+                <span class="line__button"></span>
+                <span class="line__button"></span>
+                <span class="line__button"></span>
+            </button>
+            <button class="close-button">
+                <span class="close-line"></span>
+            </button>
+        </div>
+    </div>
+    <div class="mobile-menu">
+        <ul class="mobile-menu__items">
+            <li class="mobile-menu__item text-here">
+                <a href="index.html">ГЛАВНАЯ</a>
+            </li>
+            <li class="mobile-menu__item">
+                <a href="#section-3">О НАС</a>
+            </li>
+            <li class="mobile-menu__item">
+                <a href="menu/index.html">МЕНЮ</a>
+            </li>
+            <li class="mobile-menu__item">
+                <a href="online/index.html">ОНЛАЙН-ЗАКАЗ</a>
+            </li>
+            <li class="mobile-menu__item">
+                <a href="#footer">КОНТАКТЫ</a>
             </li>
         </ul>
     </div>
@@ -148,7 +202,7 @@
             </div>
         </section>
     </main>
-    <footer>
+    <footer id="footer">
         <div class="footer">
             <h1>НАШ АДРЕС И КОНТАКТЫ</h1>
             <p>МЫ ВСЕГДА РАДЫ УЗНАТЬ ВАШЕ МНЕНИЕ. ПРОСТО ЗАПОЛНИТЕ ФОРМУ:</p>
@@ -161,7 +215,7 @@
                         <input type="email" name="" id="" placeholder="Email *">
                     </li>
                     <li class="footer-input-item">
-                        <input type="phone" name="" id="" placeholder="Тедефон *">
+                        <input type="phone" name="" id="" placeholder="Телефон *">
                     </li>
                 </ul>
                 <ul class="footer-input-items">
@@ -174,12 +228,10 @@
                 </ul>
             </div>
             <p>ДЛЯ ЗАКАЗА СТОЛИКОВ ЗВОНИТЕ: +7 (495) 000-00-00<br>
-
                 ул. Арбат, 1а, Москва, Россия<br>
-                
                 Понедельник — пятница: 12:00–23:00  / Суббота, воскресенье: 12:00–1:00
             </p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10176.569988334712!2d30.515000234512282!3d50.44900046662826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xea1a8913c5926494!2z0KHRgtC10LnQutGF0LDRg9GB!5e0!3m2!1sru!2sua!4v1588615683699!5m2!1sru!2sua" width="600" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10176.569988334712!2d30.515000234512282!3d50.44900046662826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xea1a8913c5926494!2z0KHRgtC10LnQutGF0LDRg9GB!5e0!3m2!1sru!2sua!4v1588615683699!5m2!1sru!2sua" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             <div>
                 <ul class="arrow-top__items">
                     <li class="arrow-top__item">
@@ -195,5 +247,8 @@
             <p>© 2023 Стейкхаус. Сайт создан на Wix.com</p>
         </div>
     </footer>
+    <script src="shared.js"></script>
 </body>
 </html>
+
+<!--https://ru.wix.com/website-template/view/html/1807?siteId=674d54c1-06e2-473b-bf80-f8319a73a8fc&metaSiteId=df6f40a3-b0c8-40ba-97dd-73453cc9cac9&originUrl=https%3A%2F%2Fru.wix.com%2Fwebsite%2Ftemplates%3Fcriteria%3D%25D1%2581%25D1%2582%25D0%25B5%25D0%25B9%25D0%25BA%26page%3D1-->

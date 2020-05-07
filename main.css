@@ -1,80 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
-
-* {
-    box-sizing: border-box;
-}
-
-body {
-    margin: 0;
-}
-
-.seti {
-    position: fixed;
-    right: 2%;
-    top: 20%;
-    z-index: 1;
-}
-
-.seti-item {
-    list-style: none;
-    margin-bottom: 0.4rem;
-}
-
-.seti-item img {
-    background: white;
-    border-radius: 0.5rem;
-}
-
-.main-header {
-    position: fixed;
-    left: 0;
-    top: 0;
-    background: #ae9a64;
-    width: 100%;
-    z-index: 1;
-}
-
-.header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.header-items {
-    list-style: none;
-   display: flex;
-}
-
-.header-item {
-    padding: 0.5rem 4rem;
-    font-size: 0.8rem;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.header-item a {
-    text-decoration: none;
-    color: #323232;
-    transition: color 0.3s ease 0s;
-}
-
-.header-item a:hover {
-    color: white;
-    transition: color 0.3s ease 0s;
-}
-
-.header-main-title a {
-    color: white;
-}
 
 #section-1 {
     position: relative;
     text-align: center;
-    top: 63px;
-    padding: 0.5rem 0;
+    padding: 0.5rem 2rem;
     background: #323232;
     color: #ae9a64;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
+}
+
+@media (min-width: 40rem) {
+    #section-1 {
+        top: 63px;
+        padding: 0.5rem 0;
+        font-size: 0.9rem;
+    }
 }
 
 #section-2 {
@@ -82,7 +22,7 @@ body {
     url("images/top.jpg") left 10% bottom 70% / cover no-repeat border-box;
     background-attachment: fixed;
     width: 100%;
-    height: 700px;
+    height: 550px;
     padding-top: 5rem;
 }
 
@@ -98,14 +38,14 @@ body {
     color: white;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: bold;
-    font-size: 10rem;
+    font-size: 3.5rem;
     margin-bottom: 0;
 }
 
 .main-title h3 {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 2rem;
+    font-size: 1.3rem;
     margin-top: 0rem;
 }
 
@@ -126,24 +66,40 @@ body {
     transition: border-color 0.3s ease 0s;
 }
 
+@media (min-width: 40rem) {
+    #section-2 {
+        width: 100%;
+        height: 700px;
+        padding-top: 5rem;
+    }
+
+    .main-title h1 {
+        font-size: 10rem;
+    }
+
+    .main-title h3 {
+        font-size: 2rem;
+    }
+}
+
 #section-3 {
     position: relative;
     background: linear-gradient( to top, rgb(0, 0, 0) 0%, transparent),
     url("images/main-1.jpg") left 10% bottom 70% / cover no-repeat border-box;
-    backdrop-filter: grayscale(50%);
     background-attachment: fixed;
     width: 100%;
-    height: 700px;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    padding-top: 5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 .restaurant-title {
     text-align: center;
-    padding-bottom: 5rem;
+    padding-bottom: 2rem;
     font-size: 3rem;
     font-weight: 400;
     color: #ae9a64;
@@ -151,6 +107,7 @@ body {
 
 .restaurant-items {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 0;
@@ -159,6 +116,7 @@ body {
 .restaurant-item {
     text-align: center;
     list-style: none;
+    padding-bottom: 2rem;
 }
 
 .restaurant-item h3 {
@@ -171,7 +129,7 @@ body {
 
 .restaurant-item h1 {
     color: #ae9a64;
-    width: 60%;
+    width: 90%;
     margin: 2rem auto;
     font-size: 2rem;
     font-weight: 400;
@@ -179,8 +137,37 @@ body {
 
 .restaurant-item p {
     color: #ae9a64;
-    width: 60%;
+    width: 100%;
     margin: 0 auto;
+}
+
+@media (min-width: 40rem) {
+    #section-3 {
+        width: 100%;
+        height: 700px;
+        padding-top: 5rem;
+        padding-bottom: 0;
+    }
+
+    .restaurant-title {
+        padding-bottom: 5rem;
+    }
+
+    .restaurant-items {
+        flex-direction: row;
+    }
+
+    .restaurant-item {
+        padding-bottom: 0;
+    }
+
+    .restaurant-item h1 {
+        width: 60%;
+    }
+
+    .restaurant-item p {
+        width: 60%;
+    }
 }
 
 #section-4 {
@@ -188,7 +175,7 @@ body {
     url("images/main-2.jpg") left 10% bottom 70% / cover no-repeat border-box;
     background-attachment: fixed;
     width: 100%;
-    height: 700px;
+    height: 550px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -201,17 +188,36 @@ body {
 
 .restaurant-open h1 {
     color: #ae9a64;
-    width: 50%;
+    width: 100%;
     margin: 0 auto;
-    font-size: 4rem;
+    font-size: 2.5rem;
     font-weight: 400;
 }
 
 .restaurant-open p {
     color: #ae9a64;
-    width: 50%;
+    width: 90%;
     margin: 3rem auto;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
+}
+
+@media (min-width: 40rem) {
+    #section-4 {
+        background-attachment: fixed;
+        width: 100%;
+        height: 700px;
+    }
+
+    .restaurant-open h1 {
+        width: 50%;
+        margin: 0 auto;
+        font-size: 4rem;
+    }
+
+    .restaurant-open p {
+        width: 50%;
+        font-size: 1.1rem;
+    }
 }
 
 #section-5 {
@@ -219,7 +225,7 @@ body {
      url("images/main-3.jpg") left 10% bottom 70% / cover no-repeat border-box;
     background-attachment: fixed;
     width: 100%;
-    height: 700px;
+    height: 550px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -231,17 +237,34 @@ body {
 
 .steak h1 {
     color: #ae9a64;
-    width: 50%;
+    width: 100%;
     margin: 0 auto;
-    font-size: 4rem;
+    font-size: 2.5rem;
     font-weight: 400
 }
 
 .steak p {
     color: #ae9a64;
-    width: 50%;
+    width: 90%;
     margin: 3rem auto;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
+}
+
+@media(min-width: 40rem) {
+    #section-5 {
+        height: 550px;
+    }
+
+    .steak h1 {
+        width: 50%;
+        font-size: 4rem;
+    }
+
+    .steak p {
+        width: 50%;
+        font-size: 1.1rem;
+    }
+    
 }
 
 #section-6 {
@@ -250,7 +273,7 @@ body {
      url("images/main-4.jpg") left 10% bottom 70% / cover no-repeat border-box;
     background-attachment: fixed;
     width: 100%;
-    height: 700px;
+    height: 550px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -262,17 +285,33 @@ body {
 
 .bar h1 {
     color: #ae9a64;
-    width: 25%;
+    width: 100%;
     margin: 0 auto;
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 400
 }
 
 .bar p {
     color: #ae9a64;
-    width: 50%;
+    width: 90%;
     margin: 3rem auto;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
+}
+
+@media(min-width: 40rem) {
+    #section-6 {
+        height: 700px;
+    }
+
+    .bar h1 {
+        width: 25%;
+        font-size: 4rem;
+    }
+
+    .bar p {
+        width: 50%;
+        font-size: 1.1rem;
+    }
 }
 
 #section-7 {
@@ -312,8 +351,8 @@ body {
 }
 
 .gallery-item img {
-    width: 365.9px;
-    height: 265px;
+    width: 94px;
+    height: 94px;
     filter: brightness(90%);
     transition: filter 1s ease 0s;
 }
@@ -323,8 +362,16 @@ body {
     transition: filter 0.5s ease 0s;
 }
 
+@media(min-width: 40rem) {
+    .gallery-item img {
+        width: 365.9px;
+        height: 265px;
+    }
+}
+
 #section-8 {
-    background: url("images/main-5.jpg") left 10% bottom 20% / cover no-repeat border-box;
+    background: linear-gradient( to top, rgb(0, 0, 0) 0%, transparent),
+    url("images/main-5.jpg") left 10% bottom 20% / cover no-repeat border-box;
     background-attachment: fixed;
     width: 100%;
     height: 200px;
@@ -335,25 +382,29 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 3rem;
+    padding-top: 2rem;
 }
 
 .input-email label {
     color: #ae9a64;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
 }
 
 .input-email input {
-    width: 40%;
+    width: 90%;
     padding: 0.5rem 1rem;
+    font-size: 1.2rem;
 }
 
 .input-email button {
-    width: 40%;
+    width: 90%;
     margin-top: 0.5rem;
     padding: 0.5rem 1rem;
     background: #ae9a64;
     border: 1px solid #ae9a64;
     cursor: pointer;
+    font-size: 1.2rem;
 }
 
 .input-email input.invalid,
@@ -367,97 +418,25 @@ body {
     outline: none;
 }
 
-.footer {
-    background: #323232;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+@media (min-width: 40rem) {
+    .input-email {
+        padding-top: 3rem;
+    }
+
+    .input-email label {
+        font-size: 1rem;
+        margin-bottom: auto;
+    }
+
+    .input-email input {
+        width: 40%;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+    }
+
+    .input-email button {
+        width: 40%;
+        font-size: 1rem;
+    }
 }
 
-.footer h1 {
-    text-align: center;
-    color: #ae9a64;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 3rem;
-    font-weight: 500;
-    width: 25%;
-    margin: 2rem auto;
-    margin-bottom: 0;
-}
-
-.footer p {
-    text-align: center;
-    color: #ae9a64;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 0.9rem;
-    font-weight: 500;
-    margin: 2rem auto;
-}
-
-.footer-input {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-}
-
-.footer-input-items {
-    list-style: none;
-    padding: 0;
-    text-align: right;
-}
-
-.footer-input-item {
-    padding: 0.2rem;
-}
-
-.footer-input-item input {
-    padding: 0.5rem 0.5rem;
-    padding-right: 6rem;
-    background: #323232;
-    border: 3px solid #ae9a64;
-    color: #ae9a64;
-}
-
-.sms-input input {
-    padding-bottom: 6rem;
-}
-
-.footer-input-item button {
-    background: #ae9a64;
-    border: 1px solid #ae9a64;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 1rem;
-    padding: 0.3rem;
-    cursor: pointer;
-}
-
-.footer-input-item input:focus,
-.footer-input-item button:focus {
-    outline: none;
-}
-
-.arrow-top__items {
-    list-style: none;
-    text-align: center;
-    padding: 0;
-    margin: 1rem 0;
-}
-
-.arrow-top__item {
-    padding: 0.5rem 0;
-}
-
-.arrow-top__item a {
-    text-decoration: none;
-    color: #ae9a64;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 0.9rem;
-    transition: color 0.5s ease 0s;
-}
-
-.arrow-top__item a:hover {
-    color: #7e6e42;
-    cursor: pointer;
-    transition: color 0.3s ease 0s;
-}
