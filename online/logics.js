@@ -1,13 +1,56 @@
-let QuantityItem1Menu = document.getElementById("quantity");
-var AddButton = document.querySelector(".add")
-var SubTractButton = document.querySelector(".subtract")
+const QuantityItemMenu = document.getElementById("quantity");
+const Amount = document.getElementById("amount");
+var AddButton = document.querySelector(".add");
+var SubTractButton = document.querySelector(".subtract");
 
-AddButton.addEventListener('click', function() {
-    let addone = QuantityItem1Menu + "4";
-    outputResult(addone);
-})
+let addst = 0;
 
-function outputResult(text) {
-    QuantityItem1Menu.textContent = text;
-  }
+function add() {
+    if (addst <= 99){
+        const adds = addst + 1;
+        addst++;
+        outputResult(adds);
+        console.log(adds);
+    } 
+}
+
+function subtract() {
+    if(addst <= 99) {
+        const subtracts = addst - 1;
+        addst--;
+        outputResult(subtracts);
+        console.log(subtracts);
+    } else if (subtracts <= 0) {
+        return;
+    }
+}
+
+function amount() {
+    if (add) {
+        const amountAdd = addst;
+        outputResultAmount(amountAdd);
+        console.log(amountAdd);
+    } else if (subtract) {
+        const amountSubtract = addst - 1;
+        outputResultAmount(amountSubtract);
+        console.log(amountSubtract);
+    }
+}
+
+AddButton.addEventListener('click', add);
+SubTractButton.addEventListener('click', subtract);
+AddButton.addEventListener('click', amount);
+
+function outputResult(result) {
+    QuantityItemMenu.textContent = result;
+}
+
+function outputResultAmount(amount) {
+    Amount.textContent = amount;
+}
+
+
+
+
+
 
