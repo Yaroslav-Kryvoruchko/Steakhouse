@@ -74,22 +74,31 @@ body {
     padding-left: 0.5rem;
 }
 
+.menu_one {
+    display: flex;
+    border-left: 5px solid white;
+}
+
+.menu_two {
+    display: flex;
+    border-left: none;
+}
+
 .lunch-menu__item__down:hover {
     background: rgba(174, 154, 100, 1);
-    border-left: 5px solid white;
     cursor: pointer;
 }
 
 .lunch-menu__down {
     display: flex !important;
-    transform: translateY(-10%) !important;
+    transform: translateY(-15%) !important;
 }
 
 .arrow {
     transition: transform 0.5s ease 0s;
 }
 
-.center__section {
+.center__section-starters {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -97,26 +106,60 @@ body {
     color: white;
 }
 
-.center__section h3 {
+.center__section-starters h3 {
     font-size: 1.8rem;
     font-weight: bold;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     margin-bottom: 0;
 }
 
-.center__section p {
+.center__section-starters p {
     margin-top: 1rem;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 0.9rem;
 }
 
-.center__section hr {
+.center__section-starters hr {
     width: 50%;
     background: #848484;
     border: 1px solid #848484;
 }
 
-.center__section h2 {
+.center__section-starters h2 {
+    font-size: 2.3rem;
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-top: 0.5rem;
+}
+
+.center__section-mains {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    color: white;
+}
+
+.center__section-mains h3 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-bottom: 0;
+}
+
+.center__section-mains p {
+    margin-top: 1rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 0.9rem;
+}
+
+.center__section-mains hr {
+    width: 50%;
+    background: #848484;
+    border: 1px solid #848484;
+}
+
+.center__section-mains h2 {
     font-size: 2.3rem;
     font-weight: bold;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -130,6 +173,10 @@ body {
     align-items: center;
     justify-content: center;
     overflow: hidden;
+}
+
+.menu__items {
+    padding: 0;
 }
 
 .menu__item {
@@ -176,6 +223,119 @@ body {
     align-items: flex-start;
     justify-content: center;
     height: 240px;
+}
+
+.item__one {
+    display: none;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 0 2rem;
+    color: white;
+}
+
+.item__one h5 {
+    margin-right: 0.3rem;
+}
+
+.item__one:hover {
+    background: rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+}
+
+.plas__minus {
+    opacity: 0;
+    transition: opacity 0.1s ease 0s;
+    padding: 0;
+}
+
+.amount-add__subtract {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    transform: translateX(420%);
+    transition: transform 0.3s ease 0s;
+}
+
+.amount__add {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.add-lin {
+    position: relative;
+    width: 11px;
+    height: 3px;
+    border: 1px solid #ae9a64;
+    background: #ae9a64;
+    transform: rotateZ(180deg);
+}
+
+.add-lin2 {
+    position: absolute;
+    width: 11px;
+    height: 3px;
+    border: 1px solid #ae9a64;
+    background: #ae9a64;
+    transform: rotateZ(90deg);
+}
+
+.amount__add:hover {
+    background: rgba(174, 154, 100, 0.3);
+    border-radius: 1rem;
+}
+
+.amount__subtract {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.subtract-lin {
+    position: relative;
+    width: 10px;
+    height: 3px;
+    border: 1px solid white;
+    background: white;
+    transform: rotateZ(180deg);
+}
+
+.amount__subtract:hover {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 1rem;
+}
+
+.bottom__items {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 0 1rem;
+}
+
+.bottom__items hr {
+    width: 95%;
+    border: 1px solid #ae9a64;
+    background: #ae9a64;
+}
+
+.bottom-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+.bottom-item {
+   color: white;
+   margin-left: 8rem;
 }
 
 .item1__menu {

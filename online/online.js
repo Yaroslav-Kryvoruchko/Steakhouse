@@ -12,9 +12,17 @@ var Item2 = document.querySelector(".item2__menu");
 var Item3 = document.querySelector(".item3__menu");
 var Item4 = document.querySelector(".item4__menu");
 var Item5 = document.querySelector(".item5__menu");
-var AddButton = document.querySelector(".add__button");
+var AmountButton = document.querySelector(".add__button");
+var AmountItemCenter = document.querySelector(".item__one");
+var AddMinus = document.querySelector(".plas__minus");
+var ItemOne = document.querySelector(".item__one");
+var AddSubtractButtons = document.querySelector(".amount-add__subtract");
+var Mains = document.querySelector(".center__section-mains");
+var MainsButton = document.querySelector(".menu_two");
+var Starters = document.querySelector(".center__section-starters");
+var StartersButton = document.querySelector(".menu_one");
 
-LunchMenu.addEventListener('click', function() {
+LunchMenu.addEventListener('mouseover', function() {
     DownLunch.classList.add("lunch-menu__down");
     Arrow.style.transform = "rotate(180deg)";
 })
@@ -53,11 +61,36 @@ BlackDrop.addEventListener('click', function() {
     Item5.classList.remove("open");
 })
 
-AddButton.addEventListener('click', function() {
+AmountButton.addEventListener('click', function() {
     BlackDrop.classList.remove('open');
     Item1.classList.remove("open");
     Item2.classList.remove("open");
     Item3.classList.remove("open");
     Item4.classList.remove("open");
     Item5.classList.remove("open");
+    AmountItemCenter.classList.add("open");
+})
+
+ItemOne.addEventListener("mouseover", function() {
+    AddSubtractButtons.style.transform = ("translateX(400%)");
+    AddMinus.style.opacity = ("1")
+})
+
+ItemOne.addEventListener("mouseout", function() {
+    AddSubtractButtons.style.transform = ("translateX(420%)");
+    AddMinus.style.opacity = ("0")
+})
+
+MainsButton.addEventListener('click', function() {
+    Starters.style.display = "none";
+    StartersButton.style.border = "none";
+    Mains.classList.add("open");
+    MainsButton.style.borderLeft = "5px solid white";
+})
+
+StartersButton.addEventListener('click', function() {
+    Starters.style.display = "flex";
+    StartersButton.style.borderLeft = "5px solid white";
+    Mains.classList.remove("open");
+    MainsButton.style.borderLeft = "none";
 })
