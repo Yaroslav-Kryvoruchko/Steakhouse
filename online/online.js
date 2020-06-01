@@ -22,9 +22,9 @@ var MainsButton = document.querySelector(".menu_two");
 var Starters = document.querySelector(".center__section-starters");
 var StartersButton = document.querySelector(".menu_one");
 
-LunchMenu.addEventListener('mouseover', function() {
-    DownLunch.classList.add("lunch-menu__down");
-    Arrow.style.transform = "rotate(180deg)";
+LunchMenu.addEventListener('click', function() {
+    DownLunch.classList.toggle("lunch-menu__down");
+    Arrow.classList.toggle('rotate');
 })
 
 ItemButton1.addEventListener('click', function(){
@@ -71,7 +71,7 @@ AmountButton.addEventListener('click', function() {
     AmountItemCenter.classList.add("open");
 })
 
-ItemOne.addEventListener("mouseover", function() {
+ItemOne.addEventListener('mouseover', function() {
     AddSubtractButtons.style.transform = ("translateX(400%)");
     AddMinus.style.opacity = ("1")
 })

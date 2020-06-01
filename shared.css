@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
 }
@@ -355,4 +359,10 @@ iframe {
 .close {
     transform: scale(0) !important;
 }
+
+.rotate {
+    transform: rotateZ(180deg);
+}
+
+
 
